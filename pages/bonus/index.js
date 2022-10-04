@@ -10,16 +10,12 @@ export default function Home() {
         <meta name="description" content="Unblock Demo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className={styles.heading}>Locker Access</h1>
-      <h2 className={styles.mainContent}>Unlocked</h2>
-      <div className={styles.lock}>
-        <div className={styles.lockTop}>
-          <Image src="/lock-top.svg" width={66} height={60} />
-        </div>
-        <div className={styles.lockBottom}>
-          <Image src="/lock-bottom.svg" width={105} height={70} />
-        </div>
+      <h1 className={styles.heading}>Bonus Content</h1>
+      <h2 className={styles.mainContent}>Item #0032</h2>
+      <div className={styles.img}>
+        <Image src="" width={327} height={253} />
       </div>
+      <div className={styles.button}>Claim</div>
     </div>
   );
 }
