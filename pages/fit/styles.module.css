@@ -1,0 +1,74 @@
+.root {
+  padding: 12px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #797979;
+  margin-top: 8px;
+}
+
+.img {
+  background-color: black;
+  margin-top: 32px;
+}
+
+.goesGreat {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  margin-bottom: 24px;
+}
+
+.articleImge {
+  width: 64px;
+  height: 48px;
+  background-color: rgb(66, 18, 18);
+}
+
+.itemName {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.itemLocation {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.conversation {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.comment {
+  margin-bottom: 16px;
+}
+
+.userName {
+  font-size: 14px;
+  color: #797979;
+}
+
+.commentContent {
+  font-size: 15px;
+  margin-top: 8px;
+}
