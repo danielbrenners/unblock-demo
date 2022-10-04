@@ -4,17 +4,22 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import { useSpring, animated, config } from "react-spring";
 
+const lockDelay = 1500;
+
 export default function Home() {
   const [unlock, setUnlock] = useState(true);
   const animatedText = useSpring({
-    opacity: unlock ? 1 : 0,
+    to: { opacity: 1 },
+    from: { opacity: 0 },
     config: config.molasses,
+    delay: lockDelay,
   });
   const animatedLock = useSpring({
-    transform: unlock
-      ? "translateX(142px) translateY(-55px)"
-      : "translateX(142px) translateY(-35px)",
-    delay: 2000,
+    from: { transform: "translateX(142px) translateY(-35px)" },
+    to: "translateX(142px) translateY(-55px)",
+    config: config.wobbly,
+
+    delay: lockDelay,
   });
 
   return (
