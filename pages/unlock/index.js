@@ -2,12 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import { useState } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, config } from "react-spring";
 
 export default function Home() {
   const [unlock, setUnlock] = useState(true);
-  const animatedText = useSpring({ opacity: unlock ? 1 : 0 });
-  const animatedLock = useSpring({ top: unlock ? "-54px" : "-34px" });
+  const animatedText = useSpring({
+    opacity: unlock ? 1 : 0,
+    config: config.molasses,
+  });
+  const animatedLock = useSpring({
+    transform: unlock
+      ? "translateX(142px) translateY(-55px)"
+      : "translateX(142px) translateY(-35px)",
+    delay: 2000,
+  });
 
   return (
     <div className={styles.root}>
@@ -21,9 +29,9 @@ export default function Home() {
         Unlocked
       </animated.h2>
       <div className={styles.lock}>
-        <div style={animatedLock} className={styles.lockTop}>
+        <animated.div style={animatedLock} className={styles.lockTop}>
           <Image src="/lock-top.svg" width={66} height={60} />
-        </div>
+        </animated.div>
         <div className={styles.lockBottom}>
           <Image src="/lock-bottom.svg" width={105} height={70} />
         </div>

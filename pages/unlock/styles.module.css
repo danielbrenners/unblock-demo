@@ -20,8 +20,7 @@
 }
 .lockTop {
   position: absolute;
-  top: -54px;
-  left: 142px;
+  transform: translateX(142px) translateY(-35px);
 }
 
 .lockBottom {
