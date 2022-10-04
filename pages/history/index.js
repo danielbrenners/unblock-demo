@@ -21,19 +21,57 @@ export default function Home() {
         <Image src="/italy-final.jpg" width={327} height={332} />
       </div>
       <div className={styles.article}>
-        <div className={styles.heading}>Materials</div>
+        <div className={styles.heading}>Overview</div>
+
         <div className={styles.info}>
-          <div>Item #033322</div>
-          <div>$403.04</div>
+          <div>Denim</div>
+          <div>Rome, Italy</div>
+        </div>
+        <div className={styles.info}>
+          <div>Silk georgette</div>
+          <div>Palermo, Italy</div>
+        </div>
+        <div className={styles.info}>
+          <div>Zinc alloy</div>
+          <div>Naples, Italy</div>
+        </div>
+        <div className={styles.info}>
+          <div>Assembled</div>
+          <div>Milan, Italy</div>
         </div>
       </div>
       <div className={styles.article}>
-        <div className={styles.heading}>Ownership</div>
-        <div className={styles.info}>October 30th, 2022</div>
-      </div>
-      <div className={styles.article}>
-        <div className={styles.heading}>Repairs</div>
-        <div className={styles.info}>October 30th, 2022</div>
+        <div className={styles.heading}>History</div>
+        <div className={styles.infoGrid}>
+          <div className={styles.gridHeading}>Event</div>
+          <div className={styles.gridHeading}>From</div>
+          <div className={styles.gridHeading}>To</div>
+          <div className={styles.gridHeading}>Date</div>
+          <div className={styles.gridItem}>Transfer</div>
+          <div className={styles.gridItem}>2FB40A</div>
+          <div className={styles.gridItem}>CheFird</div>
+          <div className={styles.gridItem}>3 months ago</div>
+          <div className={styles.gridItem}>Transfer</div>
+          <div className={styles.gridItem}>AD_dude</div>
+          <div className={styles.gridItem}>2FB40A</div>
+          <div className={styles.gridItem}>5 months ago</div>
+          <div className={styles.gridItem}>Repair</div>
+          <div className={styles.gridItem}></div>
+          <div className={styles.gridItem}></div>
+          <div className={styles.gridItem}>6 months ago</div>
+          <div className={styles.gridItem}>Transfer</div>
+          <div className={styles.gridItem}>Red80</div>
+          <div className={styles.gridItem}>AD_dude</div>
+          <div className={styles.gridItem}>15 months ago</div>
+          <div className={styles.gridItem}>Repair</div>
+          <div className={styles.gridItem}></div>
+          <div className={styles.gridItem}></div>
+          <div className={styles.gridItem}>19 months ago</div>
+          <div className={styles.gridItem}>Purchase</div>
+          <div className={styles.gridItem}>Store</div>
+          <div className={styles.gridItem}>Red80</div>
+          <div className={styles.gridItem}>19 months ago</div>
+        </div>
       </div>
     </div>
   );

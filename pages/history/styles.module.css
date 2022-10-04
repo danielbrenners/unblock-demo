@@ -26,3 +26,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+.infoGrid {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridHeading {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.gridItem {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
