@@ -1449,7 +1449,7 @@
     "@react-spring/rafz" "~9.5.5"
     "@react-spring/types" "~9.5.5"
 
-"@react-spring/three@^9.3.1", "@react-spring/three@~9.5.5":
+"@react-spring/three@^9.3.1", "@react-spring/three@^9.5.5", "@react-spring/three@~9.5.5":
   "integrity" "sha512-9kTIaSceqFIl5EIrdwM7Z53o5I+9BGNVzbp4oZZYMao+GMAWOosnlQdDG5GeqNsIqfW9fZCEquGqagfKAxftcA=="
   "resolved" "https://registry.npmjs.org/@react-spring/three/-/three-9.5.5.tgz"
   "version" "9.5.5"

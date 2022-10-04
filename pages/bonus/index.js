@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "./styles.module.css";
+import React, { useRef, useState, Suspense } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import Hoodie from "../../components/Hoodie";
 
 export default function Home() {
   return (
@@ -12,8 +14,13 @@ export default function Home() {
       </Head>
       <h1 className={styles.heading}>Bonus Content</h1>
       <h2 className={styles.mainContent}>Item #0032</h2>
-      <div className={styles.img}>
-        <Image src="" width={327} height={253} />
+      <div className={styles.canvas}>
+        <Canvas camera={{ position: [0, 0, 1.7] }}>
+          <Suspense fallback={"loading"}>
+            <pointLight position={[10, 10, 10]} />
+            <Hoodie />
+          </Suspense>
+        </Canvas>
       </div>
       <div className={styles.button}>Claim</div>
     </div>
