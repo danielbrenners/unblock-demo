@@ -72,3 +72,7 @@
   font-size: 15px;
   margin-top: 8px;
 }
+
+.canvas {
+  height: 400px;
+}

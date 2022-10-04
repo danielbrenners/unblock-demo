@@ -1,0 +1,29 @@
+.root {
+  padding: 12px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mainContent {
+  font-size: 48px;
+  margin-top: 100px;
+  font-weight: 500;
+}
+
+.img {
+  background-color: black;
+  margin-top: 32px;
+}
+
+.article {
+  margin-top: 32px;
+}
+
+.info {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
